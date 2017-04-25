@@ -3,9 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
 VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Triangle", "Triangle\Triangle.csproj", "{237622EF-8DEA-4579-8DC7-50148B7A63AA}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SchantzDemo", "SchantzDemo\SchantzDemo.csproj", "{237622EF-8DEA-4579-8DC7-50148B7A63AA}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TriangleTest", "TriangleTest\TriangleTest.csproj", "{36A77C3B-145E-4CA7-8CC1-878BC0B56B6F}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SchantzDemoTest", "SchantzDemoTest\SchantzDemoTest.csproj", "{36A77C3B-145E-4CA7-8CC1-878BC0B56B6F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

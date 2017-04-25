@@ -6,8 +6,8 @@
     <ProjectGuid>{36A77C3B-145E-4CA7-8CC1-878BC0B56B6F}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>ConsoleApplication9Test</RootNamespace>
-    <AssemblyName>ConsoleApplication9Test</AssemblyName>
+    <RootNamespace>SchantzDemoTest</RootNamespace>
+    <AssemblyName>SchantzDemoTest</AssemblyName>
     <TargetFrameworkVersion>v4.6</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <ProjectTypeGuids>{3AC096D0-A1C2-E12C-1390-A8335801FDAB};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
@@ -50,15 +50,19 @@
     </Otherwise>
   </Choose>
   <ItemGroup>
-    <Compile Include="TriangleTest.cs" />
+    <Compile Include="Domain\TriangleTest.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Services\TriangleFactory.cs" />
+    <Compile Include="Services\LoggerTest.cs" />
+    <Compile Include="Services\FloatArrayParserTest.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Triangle\Triangle.csproj">
+    <ProjectReference Include="..\SchantzDemo\SchantzDemo.csproj">
       <Project>{237622ef-8dea-4579-8dc7-50148b7a63aa}</Project>
-      <Name>Triangle</Name>
+      <Name>SchantzDemo</Name>
     </ProjectReference>
   </ItemGroup>
+  <ItemGroup />
   <Choose>
     <When Condition="'$(VisualStudioVersion)' == '10.0' And '$(IsCodedUITest)' == 'True'">
       <ItemGroup>

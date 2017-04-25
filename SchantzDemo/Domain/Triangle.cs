@@ -1,9 +1,9 @@
 using System;
 
-namespace ConsoleApplication9
+namespace SchantzDemo.Domain
 {
     /// <summary>
-    /// Class representing a triangle
+    /// Domain object representing a triangle
     /// </summary>
     public class Triangle
     {
@@ -13,17 +13,16 @@ namespace ConsoleApplication9
         private readonly float _sideC;
         /// <summary>
         /// Types of Triangles
-        /// Invalid: if sides cannot connect
-        /// Equilateral: if all sides are equal in length
-        /// Isosceles: if two sides are equal in length but different from last side
-        /// Other: if all sides are different in length
+        /// Andet: if sides cannot connect or if sides are different length
+        /// Ligesidet: if all sides are equal in length
+        /// Ligebenet: if two sides are equal in length but different from last side
         /// </summary>
-        public enum TriangleTypes
+        public enum Types
         {
-            Invalid,
-            Equilateral,
-            Isosceles,
-            Other
+            Ligesidet,
+            Ligebenet,
+            Ugyldig,
+            Andet
         }
         /// <summary>
         /// Construct a triangle
@@ -45,7 +44,7 @@ namespace ConsoleApplication9
         /// <summary>
         /// true if all sides in triangle can be connected
         /// </summary>
-        public bool IsValidTriangle =>
+        private bool IsValidTriangle =>
             (_sideA + _sideB) > _sideC &&
             (_sideA + _sideC) > _sideB &&
             (_sideB + _sideC) > _sideA;
@@ -53,24 +52,23 @@ namespace ConsoleApplication9
         /// <summary>
         /// returns type of triangle see TriangleType enum
         /// </summary>
-        public TriangleTypes TriangleType
+        public Types Type
         {
             get
             {
                 // not valid: check if this is an invalid triangle
                 if (!IsValidTriangle)
-                    return TriangleTypes.Invalid;
+                    return Types.Ugyldig;
                 // all sides equal: check if all sides are equal in length
                 if (_sideA == _sideB && _sideB == _sideC)
-                    return TriangleTypes.Equilateral;
+                    return Types.Ligesidet;
                 // two equal sides: if not all sides are equal then see if at least two sides are equal
                 if (_sideA == _sideB || _sideA == _sideC || _sideB == _sideC)
-                    return TriangleTypes.Isosceles;
+                    return Types.Ligebenet;
                 // no equal sides: all sides have different length
-                return TriangleTypes.Other;
+                return Types.Andet;
             }
         }
+
     }
-
-
 }
