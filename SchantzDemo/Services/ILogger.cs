@@ -1,6 +1,6 @@
 namespace SchantzDemo.Services
 {
-    internal interface ILogger
+    public interface ILogger
     {
         void Error(string message);
     }

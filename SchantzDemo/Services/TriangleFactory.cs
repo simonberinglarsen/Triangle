@@ -3,7 +3,7 @@ using SchantzDemo.Domain;
 
 namespace SchantzDemo.Services
 {
-    class TriangleFactory : ITriangleFactory
+    public class TriangleFactory : ITriangleFactory
     {
         private readonly ILogger _logger;
 

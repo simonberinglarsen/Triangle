@@ -2,7 +2,7 @@ using SchantzDemo.Domain;
 
 namespace SchantzDemo.Services
 {
-    internal interface ITriangleFactory
+    public interface ITriangleFactory
     {
         Triangle CreateFromArray(float[] sides);
     }

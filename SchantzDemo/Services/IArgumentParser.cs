@@ -1,6 +1,6 @@
 namespace SchantzDemo.Services
 {
-    internal interface IArgumentParser
+    public interface IArgumentParser
     {
         float[] Parse(string[] args);
     }

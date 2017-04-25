@@ -2,7 +2,7 @@ using System;
 
 namespace SchantzDemo.Services
 {
-    class Logger : ILogger
+    public class Logger : ILogger
     {
         /// <summary>
         /// Add message to error log..

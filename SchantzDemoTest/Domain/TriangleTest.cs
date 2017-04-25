@@ -7,8 +7,6 @@ namespace SchantzDemoTest.Domain
     [TestClass]
     public class TriangleTest
     {
-       
-
         [TestMethod]
         public void IsoscelesTrianglesAllPermutations_TrianglesCreated_AllIsOfTypeIsosceles()
         {
