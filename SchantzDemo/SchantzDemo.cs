@@ -29,7 +29,7 @@ namespace SchantzDemo
                 Triangle inputTriangle = _triangleFactory.CreateFromArray(sides);
                 if (inputTriangle != null)
                 {
-                    Console.WriteLine($"Type: {inputTriangle.Type}");
+                    Console.WriteLine($"Triangle (A;B;C) = ({sides[0]};{sides[1]};{sides[2]}) - is of type: {inputTriangle.Type}");
                     return;
                 }
                 _logger.Error("Unable to create triangle given input sides.");
