@@ -67,7 +67,7 @@ namespace SchantzDemoTest.Services
         public void TooLargeNumber_Parse_LogErrorAndThrowsException()
         {
             // given
-            string[] input = new string[] {"111111111111111111111111111111111111111111", "4", "5"};
+            string[] input = new string[] {"1111111111111111111111111111111111111111111111111111111111111111111111111111111", "4", "5"};
 
             // when
             bool exceptionIsThrown = false;
